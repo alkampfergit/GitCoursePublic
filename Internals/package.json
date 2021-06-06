@@ -1,0 +1,24 @@
+{
+  "name": "internals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -w -p .",
+    "bfo": "ts-node BasicFilesOperation.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tslint": "^6.1.3",
+    "yargs": "^17.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.1",
+    "@types/yargs": "^17.0.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  }
+}
