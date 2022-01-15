@@ -40,7 +40,7 @@ export function addFile(fileName: string, destinationDir: string): string {
 
     // Ok now we need to write the file into a directory
     var deflatedContent = zlib.deflateSync(fileContent);
-    fs.writeFileSync(destinationDir + "\\" + hash, deflatedContent)
+    fs.writeFileSync(destinationDir + "/" + hash, deflatedContent)
     return hash;
 }
 

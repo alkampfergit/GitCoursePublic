@@ -20,7 +20,20 @@ ts-node .\BasicFilesOperation.ts -f commit-file -o inflate --outputFile c:\temp\
 
 #example
 ts-node .\BasicFilesOperation.ts -f c:\develop\myproject\.git\objects\e1\f2c0ea9f9819db8712ab61c8d87050509917b9 -o inflate --outputFile c:\temp\inflated.bin
+
+ts-node ./BasicFilesOperation.ts -f /home/gianmaria/Desktop/develop/Course/GitIntro/.git/objects/8d/0e41234f24b6da002d962a26c2495ea16a425f -o inflate --outputFile /tmp/inflated.txt
 ```
 
 A typical output will simply show a raw binary content and then will extract full content of the file in c:\temp\inflated.bin. **You can open inflated.bin with a text editor if the original content of the blob was a text file, this file contains RAW blob content**. 
+
+## Writing objects
+
+The very same utility can be used to write an object inside Git Internal database.
+
+```bash
+ts-node ./BasicFilesOperation.ts -f file -o hash --destinationDir /tmp
+
+#example
+ts-node ./BasicFilesOperation.ts -f /home/gianmaria/Desktop/develop/Course/GitIntro/readme2.md -o hash --destinationDir /tmp
+```
 
